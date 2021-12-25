@@ -87,3 +87,45 @@ button {
     height: 300px;
   }
 }
+
+.courses-list-layout header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.courses-list-layout {
+  margin-top: 30px;
+}
+
+.courses-list-layout hr {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.courses-list-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.courses-list-container div {
+  background-color: #212529;
+  border-radius: 10px;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.courses-list-container div img {
+  width: 150px;
+  height: 150px;
+}
+
+.heading-container-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
