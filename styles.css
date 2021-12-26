@@ -17,7 +17,9 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #212529;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 a {
