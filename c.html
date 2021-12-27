@@ -6,22 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expand Skills</title>
     <link rel="stylesheet" href="c.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/monokai.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/a11y-dark.min.css"
     />
   </head>
   <body>
     <section class="home-intro">
       <div class="heading-intro">
         <h1>C Language</h1>
+        <div class="link-layout"><a href="index.html">Back to home</a></div>
+      </div>
+      <div class="content-intro">
+        <div class="content-block">
+          <h1><strong>What is the program and why....?</strong></h1>
+          <p>
+            Computers have amazing memory & speed but it can't do the work which
+            I want if I don't Express the work to it. so, to utilise the
+            computer speed we must know how to interact with a computer The
+            language in which the understanding between you and computer is
+            taken place is called programming language and there are many
+            programming languages few popular are Python, C++,Java etc.
+          </p>
+          <p>
+            Programming language is just a tool to talk to a computer. It's not
+            only the tool, that's important, but what u are able to create with
+            tool. Programming with any language is just like sculpting with
+            Chisel.
+          </p>
+          <p>Programming language is just a tool</p>
+          <p><strong>What can you do with it is what matters.......</strong></p>
+          <p>
+            Program code written in the text from is converted into machine
+            language by Compiler. Machine language is the language which
+            hardware can understand it's just 0 's and 1's Convening the current
+            is in respective circuit or not.
+          </p>
+        </div>
+        <div class="content-block">
+          <h1><strong>Simple C code</strong></h1>
+          <p>the sample code of c language looks like this</p>
+          <pre>
+              <code class="c">
+#include  &lt;stdio.h&gt;
+    int  main()
+    {
+        int a =78;
+        int b=34;
+        int add=a+b;
+        printf("%d",c);
+        return add;
+    }
+              </code>
+          </pre>
+          <p>
+            When we run the code. It's like saying to computer Hey read line to
+            line in code and Do the work assigned. Before knowing what this code
+            means let's take a look at how program works and basic C syntax .
+          </p>
+        </div>
+        <div class="content-block">
+          <h1><strong>How Programming Works</strong></h1>
+          <p>programming syncs with humans in following ways.</p>
+          <ul>
+            <li><p>Storing data in a classified way.</p></li>
+            <li><p>Applying logic condition for Executing various tasks</p></li>
+          </ul>
+        </div>
+        <div class="content-block">
+          <p>lets look into first one ie. Storing data in a classified way.</p>
+          <p>What comes to mind by observing below rows....</p>
+          <ol>
+            <li><p>car, bike, truck , bus , bicycle</p></li>
+            <li><p>red, green ,blue, white, black</p></li>
+            <li><p>2.4,5.5,56.4,53.4</p></li>
+          </ol>
+          <p>These are the set of memory in our brain ,in form of classes.</p>
+          <p>
+            Similarly ,there are few inbuilt classification(Data Types) in c as
+          </p>
+          <ul>
+            <li>
+              <p><strong>int</strong> &emsp; &lt;for integers&gt;</p>
+            </li>
+            <li>
+              <p><strong>char</strong> &emsp; &lt;for strings&gt;</p>
+            </li>
+            <li>
+              <p><strong>float</strong> &emsp; &lt;for decimal values&gt;</p>
+            </li>
+            <li>
+              <p>
+                <strong>double</strong> &emsp; &lt;for high precision decimal
+                values&gt;
+              </p>
+            </li>
+          </ul>
+          <p>and these are called <strong>Data Types</strong></p>
+          <p>
+            So if we want to store something in c we must state to which class
+            it belongs to And this is basic statement for storing data
+          </p>
+          <pre>
+            <code class="c">
+int Score = 777;
+char Grade="A";
+char Team[20]="Expand Skills" //[20] is the limit of chars
+float numfloat= 4.21 // 7 decimal digit precision
+double numdouble= 2.398347342 // 15 decimal digit precision
+            </code>
+                </pre>
+          <p>
+            The above are statements in c code,Telling systems to store diffrent
+            types of data.
+          </p>
+          <p>Any statements in c must terminate with semicolon ;</p>
+          <p>
+            The above code conveys system to store data..777,"A","Expand
+            Skills",4.21,2.398347342 in memory with placing an ID
+            tag(IDENTIFIER) of Score ,Grade ,Team ,numfloat ,numdouble
+            respectively When we want to acsess the data we are going to use id
+            tag(IDENTIFIER) to acess it another way of storing data is by using
+            array
+          </p>
+        </div>
       </div>
     </section>
-    <pre class="dinesh">
-        <code class="html">
-            &lt;strong&gt;Dinesh&lt;/strong&gt;
-        </code>
-    </pre>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

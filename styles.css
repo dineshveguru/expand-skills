@@ -107,6 +107,13 @@ html {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .intro-heading {
+    background-size: cover;
+    background-position: left;
+  }
+}
+
 /* @media screen and (max-width: 600px) {
   .python img {
     width: 150px;
