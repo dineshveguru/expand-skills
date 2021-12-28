@@ -38,10 +38,10 @@ html {
 .intro-heading {
   display: flex;
   justify-content: space-around;
-  background: url(images/fakurian-design-9xCvw544PWQ-unsplash.jpg);
+  background: url(images/takashi-miyazaki-ezs8Tl4OQNo-unsplash.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   align-items: center;
 }
 
