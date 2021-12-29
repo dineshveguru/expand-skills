@@ -35,6 +35,11 @@ html {
   text-align: end;
 }
 
+.intro-heading p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .intro-heading {
   display: flex;
   justify-content: space-around;
@@ -43,6 +48,7 @@ html {
   background-size: cover;
   background-position: center;
   align-items: center;
+  color: aliceblue;
 }
 
 .intro-courses {

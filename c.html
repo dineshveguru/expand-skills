@@ -13,745 +13,792 @@
     />
   </head>
   <body>
-    <section class="home-intro">
-      <div class="heading-intro">
-        <h1>C Language</h1>
-        <div class="link-layout"><a href="index.html">Back to home</a></div>
-      </div>
-      <div class="content-intro">
-        <div class="content-block">
-          <h1><strong>What is the program and why....?</strong></h1>
-          <p>
-            Computers have amazing memory & speed but it can't do the work which
-            I want if I don't Express the work to it. so, to utilise the
-            computer speed we must know how to interact with a computer The
-            language in which the understanding between you and computer is
-            taken place is called programming language and there are many
-            programming languages few popular are Python, C++,Java etc.
-          </p>
-          <p>
-            Programming language is just a tool to talk to a computer. It's not
-            only the tool, that's important, but what u are able to create with
-            tool. Programming with any language is just like sculpting with
-            Chisel.
-          </p>
-          <p>Programming language is just a tool</p>
-          <p><strong>What can you do with it is what matters.......</strong></p>
-          <p>
-            Program code written in the text from is converted into machine
-            language by Compiler. Machine language is the language which
-            hardware can understand it's just 0 's and 1's Convening the current
-            is in respective circuit or not.
-          </p>
+    <div>
+      <section class="home-intro">
+        <div class="heading-intro">
+          <h1>C Language</h1>
+          <div class="link-layout"><a href="index.html">Back to home</a></div>
         </div>
-        <div class="content-block">
-          <h1><strong>Simple C code</strong></h1>
-          <p>the sample code of c language looks like this</p>
-          <pre>
-              <code class="c">
-#include  &lt;stdio.h&gt;
-    int  main()
-    {
-        int a =78;
-        int b=34;
-        int add=a+b;
-        printf("%d",c);
-        return add;
-    }
-              </code>
-          </pre>
-          <p>
-            When we run the code. It's like saying to computer Hey read line to
-            line in code and Do the work assigned. Before knowing what this code
-            means let's take a look at how program works and basic C syntax .
-          </p>
-        </div>
-        <div class="content-block">
-          <h1><strong>How Programming Works</strong></h1>
-          <p>programming syncs with humans in following ways.</p>
-          <ul>
-            <li><p>Storing data in a classified way.</p></li>
-            <li><p>Applying logic condition for Executing various tasks</p></li>
-          </ul>
-        </div>
-        <div class="content-block">
-          <p>lets look into first one ie. Storing data in a classified way.</p>
-          <p>What comes to mind by observing below rows....</p>
-          <ol>
-            <li><p>car, bike, truck , bus , bicycle</p></li>
-            <li><p>red, green ,blue, white, black</p></li>
-            <li><p>2.4,5.5,56.4,53.4</p></li>
-          </ol>
-          <p>These are the set of memory in our brain ,in form of classes.</p>
-          <p>
-            Similarly ,there are few inbuilt classification(Data Types) in c as
-          </p>
-          <ul>
-            <li>
-              <p><strong>int</strong> &emsp; &lt;for integers&gt;</p>
-            </li>
-            <li>
-              <p><strong>char</strong> &emsp; &lt;for strings&gt;</p>
-            </li>
-            <li>
-              <p><strong>float</strong> &emsp; &lt;for decimal values&gt;</p>
-            </li>
-            <li>
-              <p>
-                <strong>double</strong> &emsp; &lt;for high precision decimal
-                values&gt;
-              </p>
-            </li>
-          </ul>
-          <p>and these are called <strong>Data Types</strong></p>
-          <p>
-            So if we want to store something in c we must state to which class
-            it belongs to And this is basic statement for storing data
-          </p>
-          <pre>
-            <code class="c">
-int Score = 777;
-char Grade="A";
-char Team[20]="Expand Skills" //[20] is the limit of chars
-float numfloat= 4.21 // 7 decimal digit precision
-double numdouble= 2.398347342 // 15 decimal digit precision
-            </code>
-                </pre>
-          <p>
-            The above are statements in c code,Telling systems to store diffrent
-            types of data.
-          </p>
-          <p>Any statements in c must terminate with semicolon ;</p>
-          <p>
-            The above code conveys system to store data..777,"A","Expand
-            Skills",4.21,2.398347342 in memory with placing an ID
-            tag(IDENTIFIER) of Score ,Grade ,Team ,numfloat ,numdouble
-            respectively When we want to acsess the data we are going to use id
-            tag(IDENTIFIER) to access it.
-          </p>
-        </div>
-        <div class="content-block">
-          <h1><strong>Array</strong></h1>
-          <p>
-            Array is a collection of same type of data items stored in a
-            continuous memory allocations and the data in it are called
-            elements. the position index is used as its identifier in array
-          </p>
-          <p><strong>Array code</strong></p>
-          <pre>
-            <code class="c">
-int  mark[5]={19,10,8,17,9};
-//declaring array with size 5
-
-mark[2]=1;
-//replacing element in index[2] with element 1              
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Identifiers</strong></h1>
-          <p>
-            A C identifier is a name used to identify a variable, function, or
-            any other user-defined item
-          </p>
-          <pre>
-            <code class="c">
-int Score = 777;            
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Tokens</strong></h1>
-          <p>
-            Tokens are the individual smallest building blocks of code which
-            compiler is about to decode into machine code
-          </p>
-          <p>In c code statement below,</p>
-          <pre>
-            <code class="c">
-printf("Hello, World!  \n");             
-            </code>
-                </pre>
-          <p>
-            The individual tokens are: printf<br />
-            (<br />
-            "Hello, World! \n"<br />
-            )<br />
-            ;
-          </p>
-          <p>
-            tokens can be identifiers ,special characters,keywords,constants or
-            a string literal
-          </p>
-        </div>
-        <div class="content-block">
-          <h1><strong>Comments</strong></h1>
-          <p>
-            Comments are text in your C program and they are ignored by the
-            compiler. They start with /* and terminates with the characters */
-            or u can make single line comment starting with // as shown below:
-          </p>
-          <pre>
-            <code class="c">
-    /*  multiple 
-    line 
-comment  */ 
-
-//  this  is  a  single line comment                      
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Keywords</strong></h1>
-          <p>
-            keywords are words with special meaning in c code,and cant be used
-            as variables or identifiers The following list shows the reserved
-            words in C
-          </p>
-          <pre>
-            <code class="c">
-auto 
-else
-Long
-switch 
-break
-enum
-register
-typedef
-case
-extern 
-return
-union
-char 
-float 
-short 
-unsigned 
-const
-for 
-signed
-void
-continue
-goto 
-sizeof
-volatile 
-default
-if 
-static
-while
-do
-int 
-struct
-_ packed 
-double                
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Functions</strong></h1>
-          <p>
-            Functions are a group of lines which will process code and every c
-            program musst have atleast one function cause its where the
-            execution of any task is done
-          </p>
-          <p><strong>basic Function syntax:</strong></p>
-          <pre>
-            <code class="c">
-return_type  function_name( parameter list )
-{
-  body of the function
-}                                  
-            </code>
-                </pre>
-          <p>
-            returntype is the type which will be of type
-            <strong>void</strong> or <strong>int</strong>
-          </p>
-          <p>function_name is the <strong>identifier</strong></p>
-          <p>
-            parameter list takes input if the function takes input to e body of
-            the function contains code which is to be executed if we call
-            function
-          </p>
-          <p>The below function is add function...</p>
-          <pre>
-            <code class="c">
-/*  Addition Function for 2 Numbers*/
-int  Add(int  num1,  int  num2)//num1, num2 are parameters
-{ 
-/*  local  variable  declaration  */
-  int  Ans;
-  Ans  =  num2  +num  1;
-  //storing  data  in  Ans
-  return  Ans;
-//function  returns  Ans when  its  called
-}                                              
-            </code>
-                </pre>
-          <p>Function is called by the following syntax</p>
-          <p>Add(5, 7)</p>
-          <p>it's going to execute and return Ans in place of Add(5,7)</p>
-          <p>Now lets run sample code in c</p>
-          <pre>
-          <code class="c">
-/*  this is  a comment  computer ignores  it it is used  to make program  notes*/ 
-#include  &lt;stdio.h&gt; 
-/*imports   a c coded  file named  stdio.h we are importing it for  a reason*/
-int  main()     /*   this is the main function where  main process is executed */
-{ 
-  int a =36;
-  /*  is declaration  and assigning  variable with identifier  a, b*/
-  int b=34;    
-  int add=a+b;
-  printf("%d",c); /*this is a function imported  from stdio.h and lt will display any text in console*/
-    return add; 
-/*returns a value add if any other  code calls the main function */
-}                                                     
-          </code>
-              </pre>
-          <p>
-            When we Run the code the computer will read line to line and
-            performs the task assined.
-          </p>
-          <p>we assigned to add two numbers and print .it will give output</p>
-          <pre>
-            <code class="c">
-70                                                  
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Understanding Printf Function</strong></h1>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main()
-  {
-      char ch = 'A';
-      char str[30] = "Expand  Skills";
-      float flt = 10.234;
-      int no = 150;
-      double dbl =20. 123456 ;
-      printf("Character is %c \n", ch);
-      printf("String is %s \n" , str);
-      printf("Float value is %f \n", flt);
-      printf("Integer value is %d\n" , no);
-      printf("Double value is %lf \n", dbl);
-      return 0;
-  }
-                                                                  
-            </code>
-                </pre>
-          <p>print function is used to display something On console screen</p>
-          <p>above code is going to give output............</p>
-          <pre>
-            <code class="c">
-Character is A
-String is Expand  Skills
-Float value is 10.234000
-Integer value is 150
-Double value is 20.12345600000000                                                                     
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Understanding SCANF Function</strong></h1>
-          <p>Now let's See how to give info from console screen</p>
-          <p>function scanf() is used For it................</p>
-          <p>Consider the following code</p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main()
-  {
-      char ch;
-      char str[100];
-      int age; 
-      
-      printf("Enter any character \n");
-      scanf("%c", &ch);
-      printf("Entered character is %c \n", ch);
-      printf("Enter any string ( upto 100 character ) \n");
-      scanf("%s", &str);
-      printf("Entered string is %s \n", str);
-      
-      printf("Enter any number \n");
-      scanf("%d", &age);
-      printf("Entered no. is %d \n", age);
-  }                                                                     
-            </code>
-                </pre>
-          <p>this is going to give output......</p>
-          <pre>
-            <code class="c">
-Enter any character
-z
-Entered character is z
-Enter any string ( upto 100 character )
-Expandskills
-Entered string is Expandskills
-Enter any number
-7
-Entered no. is 7                                                                                  
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>SAMPLE INTERACTIVE TRAVELLING BOT CODE</strong></h1>
-          <p>
-            And now give the system an interactive Conversation between u and
-            computer...
-          </p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main()
-  {	
-    printf("......TRAVELERS INFO.....\n ");
-    char name[20],dest[30];
-    int age; 
-    printf("Enter Your Name....");
-    scanf("%s", &name);
-    printf("hi %s ,Enter  your age...."name);
-    scanf("%d", &age);
-    printf("Enter Your destination..... ");
-    scanf("%s", &dest);
-    
-    printf("thanks for cooperation %s,\n happy journey  to %s",name,dest);
-    return 0; 
-  }                                                                            
-            </code>
-                </pre>
-          <p>this is going to give output.. ....</p>
-          <pre>
-                  <code class="c">
-......TRAVELERS INFO.....
-Enter Your Name....Manoj
-hi Manoj ,Enter  your age....19
-Enter Your destination..... allagaddha
-thanks for cooperation Manoj,
-happy journey  to allagaddha                                                               
-                  </code>
-                      </pre>
-          <p>Its just dealing with info with computer</p>
-          <p>
-            Let's see applying <strong>Logic</strong> for Executing various
-            tasks
-          </p>
-        </div>
-        <div class="content-block">
-          <h1><strong>Applying logic condition </strong></h1>
-          <p>
-            For example... There is a sport men<br />
-            If it's raining he will not go to ground If not then he will go to
-            ground with his kit. <br />
-
-            Human have a set of instructions depending On condition in many
-            aspect<br />
-
-            We can make similar type of condition Using programming language In
-            the previous interactive code we can make it to not respond politely
-            to targeted persons and do things differently......<br />
-
-            for the previous code.....we can stop a person in traveling by
-            checking name .....example say we want to point out birladen we can
-            do it using if else condition
-          </p>
-        </div>
-        <div class="content-block">
-          <h1><strong> if condition </strong></h1>
-          <p>
-            if condition controls conditional branching ie. it checks the
-            <strong>conditional parameter</strong> ,and allows the branch to
-            execute if conditional parameter equals to 1(true),if 0(false) it
-            skips the branch
-          </p>
-          <p><strong>If example code</strong></p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main () 
-  {
-      int a;
-      printf("enter  value of a.");
-      scanf("%d",&a);
-      /* check the boolean condition using if statement */
-      if( a &lt; 20 ) {
-        /* if condition is true then print the following */
-        printf("if statement executed \n" ); 
-    }
-      return 0;
-  }                                                             
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>If Else</strong></h1>
-          <p>
-            If else condition controls conditional branching i.e. it checks the
-            conditional parameter ,and allows the branch to execute 2 ways one
-            way if conditional parameter equals to 1(true) ,another way if
-            conditional parameter equals to 0(false)
-          </p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main () 
-  {
-      int a;
-      printf("enter  value of a.");
-      scanf("%d",&a);
-      /* check the boolean condition using if statement */
-      if( a &lt; 20 ) {
-        /* if condition is true then print the following */
-        printf("if statement executed \n" ); 
-    }
-  else{
-        printf("else statement executed \n" ); 
-    }
-  
-      return 0;
-  }                                                    
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Pointing birladen out in names</strong></h1>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-#include &lt;String.h&gt;                                               
-int main()
-{
-  printf("......TRAVELERS INFO.....\n ");
-  char name[20],dest[30];
-  int age; 
-  printf("Enter Your Name....");
-  scanf("%s", &name);
-  int c=strcmp(name,"birladen");//function imported from string.h 
-  if (c!=0){
-    printf("hi %s ,Enter  your age....",name);
-    scanf("%d", &age);
-    printf("Enter Your destination..... ");
-    scanf("%s", &dest);
-    printf("thanks for cooperation %s,/n happy journey  to %s",name,dest);
-
-  }
-  else{
-    printf("you are not allowed and u are under  suspect..... ");
-  }
-return 0; 
-}
-            </code>
-                </pre>
-          <p>
-            The above logics will execute branch code one time .there are 2
-            conditions which will execute the branch code multiple times
-          </p>
-          <p>
-            They are…<br />
-            While loop<br />
-            For loop
-          </p>
-          <p>
-            Both while loop and for loop looks similar… … But in for loop we
-            know how many reputation branch loop makes Before… .like x no. Of
-            times But while loops around till the value get false even infinite
-            time…
-          </p>
-        </div>
-        <div class="container-block">
-          <h1><strong>While</strong></h1>
-          <p>
-            While condition will loop the same condition multiple times by
-            checking the condition after every loop
-          </p>
-          <p><strong>While Example code</strong></p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main () {
-  
-     /* local variable definition */
-     int a = 10;
-  
-     /* while loop execution */
-     while( a &lt; 20 ) {
-        printf("value of a: %d\n", a);
-        a++;//this format means a=a+1
-  //ie. Its just increment….of data stored in a by 1
-     }
-   
-     return 0;
-  }
-  
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>For</strong></h1>
-          <p><strong>For.. Example Code</strong></p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-  int main () {
-
-    int a;
-  
-    /* for loop execution */
-    for( a = 10; a &lt; 20; a = a + 1 ){
-      printf("value of a: %d\n", a);
-    }
-
-    return 0;
-  }
-            </code>
-                </pre>
-          <p>
-            Let me ask u for writing down prime no. Up-to 10,000 Once try it on
-            paper and imagine how much time it takes for a human<br />
-
-            Now lets find Prime Numbers up-to 10,000 Using C
-          </p>
-          <p>It completes the job in seconds…</p>
-        </div>
-        <div class="content-block">
-          <h1><strong>PRINTING PRIME NO. CODE</strong></h1>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-int main(){
-
-  int num,i,count,n;
-  printf("Enter max range: ");
-  scanf("%d",&n);
-
-  for(num = 1;num&lt;=n;num++){
-
-       count = 0;
-
-       for(i=2;i&lt;=num/2;i++){
-           if(num%i==0){
-               count++;
-               break;
-           }
+        <div class="content-intro">
+          <div class="content-block">
+            <h1><strong>What is the program and why....?</strong></h1>
+            <p>
+              Computers have amazing memory & speed but it can't do the work
+              which I want if I don't Express the work to it. so, to utilise the
+              computer speed we must know how to interact with a computer The
+              language in which the understanding between you and computer is
+              taken place is called programming language and there are many
+              programming languages few popular are Python, C++,Java etc.
+            </p>
+            <p>
+              Programming language is just a tool to talk to a computer. It's
+              not only the tool, that's important, but what u are able to create
+              with tool. Programming with any language is just like sculpting
+              with Chisel.
+            </p>
+            <p>Programming language is just a tool</p>
+            <p>
+              <strong>What can you do with it is what matters.......</strong>
+            </p>
+            <p>
+              Program code written in the text from is converted into machine
+              language by Compiler. Machine language is the language which
+              hardware can understand it's just 0 's and 1's Convening the
+              current is in respective circuit or not.
+            </p>
+          </div>
+          <div class="content-block">
+            <h1><strong>Simple C code</strong></h1>
+            <p>the sample code of c language looks like this</p>
+            <pre>
+                <code class="c">
+      #include  &lt;stdio.h&gt;
+      int  main()
+      {
+          int a =78;
+          int b=34;
+          int add=a+b;
+          printf("%d",c);
+          return add;
       }
+                </code>
+            </pre>
+            <p>
+              When we run the code. It's like saying to computer Hey read line
+              to line in code and Do the work assigned. Before knowing what this
+              code means let's take a look at how program works and basic C
+              syntax .
+            </p>
+          </div>
+          <div class="content-block">
+            <h1><strong>How Programming Works</strong></h1>
+            <p>programming syncs with humans in following ways.</p>
+            <ul>
+              <li><p>Storing data in a classified way.</p></li>
+              <li>
+                <p>Applying logic condition for Executing various tasks</p>
+              </li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <div>
+              <p>
+                lets look into first one ie. Storing data in a classified way.
+              </p>
+              <p>What comes to mind by observing below rows....</p>
+              <ol>
+                <li><p>car, bike, truck , bus , bicycle</p></li>
+                <li><p>red, green ,blue, white, black</p></li>
+                <li><p>2.4,5.5,56.4,53.4</p></li>
+              </ol>
+              <p>
+                These are the set of memory in our brain ,in form of classes.
+              </p>
+              <p>
+                Similarly ,there are few inbuilt classification(Data Types) in c
+                as
+              </p>
+              <ul>
+                <li>
+                  <p><strong>int</strong> &emsp; &lt;for integers&gt;</p>
+                </li>
+                <li>
+                  <p><strong>char</strong> &emsp; &lt;for strings&gt;</p>
+                </li>
+                <li>
+                  <p>
+                    <strong>float</strong> &emsp; &lt;for decimal values&gt;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>double</strong> &emsp; &lt;for high precision
+                    decimal values&gt;
+                  </p>
+                </li>
+              </ul>
+              <p>and these are called <strong>Data Types</strong></p>
+              <p>
+                So if we want to store something in c we must state to which
+                class it belongs to And this is basic statement for storing data
+              </p>
+              <pre>
+                <code class="c">
+              int Score = 777;
+              char Grade="A";
+              char Team[20]="Expand Skills" //[20] is the limit of chars
+              float numfloat= 4.21 // 7 decimal digit precision
+              double numdouble= 2.398347342 // 15 decimal digit precision
+                </code>
+                    </pre>
+              <p>
+                The above are statements in c code,Telling systems to store
+                diffrent types of data.
+              </p>
+              <p>Any statements in c must terminate with semicolon ;</p>
+              <p>
+                The above code conveys system to store data..777,"A","Expand
+                Skills",4.21,2.398347342 in memory with placing an ID
+                tag(IDENTIFIER) of Score ,Grade ,Team ,numfloat ,numdouble
+                respectively When we want to acsess the data we are going to use
+                id tag(IDENTIFIER) to access it.
+              </p>
+            </div>
+            <div>
+              <img src="images/dtypes.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>Array</strong></h1>
+              <p>
+                Array is a collection of same type of data items stored in a
+                continuous memory allocations and the data in it are called
+                elements. the position index is used as its identifier in array
+              </p>
+              <p><strong>Array code</strong></p>
+              <pre>
+                <code class="c">
+              int  mark[5]={19,10,8,17,9};
+              //declaring array with size 5
       
-       if(count==0 && num!= 1)
-           printf("%d ",num);
-  }
-
- return 0;
-}
-
-            </code>
-                </pre>
+              mark[2]=1;
+              //replacing element in index[2] with element 1
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/ARRAY.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <h1><strong>Identifiers</strong></h1>
+            <p>
+              A C identifier is a name used to identify a variable, function, or
+              any other user-defined item
+            </p>
+            <pre>
+              <code class="c">
+      int Score = 777;
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <h1><strong>Tokens</strong></h1>
+            <p>
+              Tokens are the individual smallest building blocks of code which
+              compiler is about to decode into machine code
+            </p>
+            <p>In c code statement below,</p>
+            <pre>
+              <code class="c">
+      printf("Hello, World!  \n");
+              </code>
+                  </pre>
+            <p>
+              The individual tokens are: printf<br />
+              (<br />
+              "Hello, World! \n"<br />
+              )<br />
+              ;
+            </p>
+            <p>
+              tokens can be identifiers ,special characters,keywords,constants
+              or a string literal
+            </p>
+          </div>
+          <div class="content-block">
+            <h1><strong>Comments</strong></h1>
+            <p>
+              Comments are text in your C program and they are ignored by the
+              compiler. They start with /* and terminates with the characters */
+              or u can make single line comment starting with // as shown below:
+            </p>
+            <pre>
+              <code class="c">
+      /*  multiple
+      line 
+      comment  */ 
+      
+      //  this  is  a  single line comment
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>Keywords</strong></h1>
+              <p>
+                keywords are words with special meaning in c code,and cant be
+                used as variables or identifiers The following list shows the
+                reserved words in C
+              </p>
+              <pre>
+                <code class="c">
+      auto 
+      else
+      Long
+      switch 
+      break
+      enum
+      register
+      typedef
+      case
+      extern 
+      return
+      union
+      char 
+      float 
+      short 
+      unsigned 
+      const
+      for 
+      signed
+      void
+      continue
+      goto 
+      sizeof
+      volatile 
+      default
+      if 
+      static
+      while
+      do
+      int 
+      struct
+      _ packed 
+      double
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/keyword.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>Functions</strong></h1>
+              <p>
+                Functions are a group of lines which will process code and every
+                c program musst have atleast one function cause its where the
+                execution of any task is done
+              </p>
+              <p><strong>basic Function syntax:</strong></p>
+              <pre>
+                <code class="c">
+              return_type  function_name( parameter list )
+              {
+                body of the function
+              }
+                </code>
+                    </pre>
+              <p>
+                returntype is the type which will be of type
+                <strong>void</strong> or <strong>int</strong>
+              </p>
+              <p>function_name is the <strong>identifier</strong></p>
+              <p>
+                parameter list takes input if the function takes input to e body
+                of the function contains code which is to be executed if we call
+                function
+              </p>
+              <p>The below function is add function...</p>
+              <pre>
+                <code class="c">
+              /*  Addition Function for 2 Numbers*/
+              int  Add(int  num1,  int  num2)//num1, num2 are parameters
+              {
+              /*  local  variable  declaration  */
+                int  Ans;
+                Ans  =  num2  +num  1;
+                //storing  data  in  Ans
+                return  Ans;
+              //function  returns  Ans when  its  called
+              }
+                </code>
+                    </pre>
+              <p>Function is called by the following syntax</p>
+              <p>Add(5, 7)</p>
+              <p>it's going to execute and return Ans in place of Add(5,7)</p>
+              <p>Now lets run sample code in c</p>
+              <pre>
+              <code class="c">
+              /*  this is  a comment  computer ignores  it it is used  to make program  notes*/
+              #include  &lt;stdio.h&gt;
+              /*imports   a c coded  file named  stdio.h we are importing it for  a reason*/
+              int  main()     /*   this is the main function where  main process is executed */
+              {
+                int a =36;
+                /*  is declaration  and assigning  variable with identifier  a, b*/
+                int b=34;
+                int add=a+b;
+                printf("%d",c); /*this is a function imported  from stdio.h and lt will display any text in console*/
+                  return add;
+              /*returns a value add if any other  code calls the main function */
+              }
+              </code>
+                  </pre>
+              <p>
+                When we Run the code the computer will read line to line and
+                performs the task assined.
+              </p>
+              <p>
+                we assigned to add two numbers and print .it will give output
+              </p>
+              <pre>
+                <code class="c">
+              70
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/function.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <h1><strong>Understanding Printf Function</strong></h1>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+        int main()
+        {
+        char ch = 'A';
+        char str[30] = "Expand  Skills";
+        float flt = 10.234;
+        int no = 150;
+        double dbl =20. 123456 ;
+        printf("Character is %c \n", ch);
+        printf("String is %s \n" , str);
+        printf("Float value is %f \n", flt);
+        printf("Integer value is %d\n" , no);
+        printf("Double value is %lf \n", dbl);
+        return 0;
+        }
+      
+              </code>
+                  </pre>
+            <p>print function is used to display something On console screen</p>
+            <p>above code is going to give output............</p>
+            <pre>
+              <code class="c">
+      Character is A
+      String is Expand  Skills
+      Float value is 10.234000
+      Integer value is 150
+      Double value is 20.12345600000000
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <h1><strong>Understanding SCANF Function</strong></h1>
+            <p>Now let's See how to give info from console screen</p>
+            <p>function scanf() is used For it................</p>
+            <p>Consider the following code</p>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+        int main()
+        {
+        char ch;
+        char str[100];
+        int age;
+      
+        printf("Enter any character \n");
+        scanf("%c", &ch);
+        printf("Entered character is %c \n", ch);
+        printf("Enter any string ( upto 100 character ) \n");
+        scanf("%s", &str);
+        printf("Entered string is %s \n", str);
+      
+        printf("Enter any number \n");
+        scanf("%d", &age);
+        printf("Entered no. is %d \n", age);
+        }
+              </code>
+                  </pre>
+            <p>this is going to give output......</p>
+            <pre>
+              <code class="c">
+      Enter any character
+      z
+      Entered character is z
+      Enter any string ( upto 100 character )
+      Expandskills
+      Entered string is Expandskills
+      Enter any number
+      7
+      Entered no. is 7
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <h1><strong>SAMPLE INTERACTIVE TRAVELLING BOT CODE</strong></h1>
+            <p>
+              And now give the system an interactive Conversation between u and
+              computer...
+            </p>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+        int main()
+        {
+      printf("......TRAVELERS INFO.....\n ");
+      char name[20],dest[30];
+      int age;
+      printf("Enter Your Name....");
+      scanf("%s", &name);
+      printf("hi %s ,Enter  your age...."name);
+      scanf("%d", &age);
+      printf("Enter Your destination..... ");
+      scanf("%s", &dest);
+      
+      printf("thanks for cooperation %s,\n happy journey  to %s",name,dest);
+      return 0; 
+        }
+              </code>
+                  </pre>
+            <p>this is going to give output.. ....</p>
+            <pre>
+                    <code class="c">
+      ......TRAVELERS INFO.....
+      Enter Your Name....Manoj
+      hi Manoj ,Enter  your age....19
+      Enter Your destination..... allagaddha
+      thanks for cooperation Manoj,
+      happy journey  to allagaddha
+                    </code>
+                        </pre>
+            <p>Its just dealing with info with computer</p>
+            <p>
+              Let's see applying <strong>Logic</strong> for Executing various
+              tasks
+            </p>
+          </div>
+          <div class="content-block">
+            <h1><strong>Applying logic condition </strong></h1>
+            <p>
+              For example... There is a sport men<br />
+              If it's raining he will not go to ground If not then he will go to
+              ground with his kit. <br />
+              Human have a set of instructions depending On condition in many
+              aspect<br />
+              We can make similar type of condition Using programming language
+              In the previous interactive code we can make it to not respond
+              politely to targeted persons and do things differently......<br />
+              for the previous code.....we can stop a person in traveling by
+              checking name .....example say we want to point out birladen we
+              can do it using if else condition
+            </p>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong> if condition </strong></h1>
+              <p>
+                if condition controls conditional branching ie. it checks the
+                <strong>conditional parameter</strong> ,and allows the branch to
+                execute if conditional parameter equals to 1(true),if 0(false)
+                it skips the branch
+              </p>
+              <p><strong>If example code</strong></p>
+              <pre>
+                <code class="c">
+              #include &lt;stdio.h&gt;
+                int main ()
+                {
+                    int a;
+                    printf("enter  value of a.");
+                    scanf("%d",&a);
+                    /* check the boolean condition using if statement */
+                    if( a &lt; 20 ) {
+                      /* if condition is true then print the following */
+                      printf("if statement executed \n" );
+                  }
+                    return 0;
+                }
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/if.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>If Else</strong></h1>
+              <p>
+                If else condition controls conditional branching i.e. it checks
+                the conditional parameter ,and allows the branch to execute 2
+                ways one way if conditional parameter equals to 1(true) ,another
+                way if conditional parameter equals to 0(false)
+              </p>
+              <pre>
+                <code class="c">
+              #include &lt;stdio.h&gt;
+                int main ()
+                {
+                    int a;
+                    printf("enter  value of a.");
+                    scanf("%d",&a);
+                    /* check the boolean condition using if statement */
+                    if( a &lt; 20 ) {
+                      /* if condition is true then print the following */
+                      printf("if statement executed \n" );
+                  }
+                else{
+                      printf("else statement executed \n" );
+                  }
+      
+                    return 0;
+                }
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/else.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <h1><strong>Pointing birladen out in names</strong></h1>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+      #include &lt;String.h&gt;                                               
+      int main()
+      {
+        printf("......TRAVELERS INFO.....\n ");
+        char name[20],dest[30];
+        int age; 
+        printf("Enter Your Name....");
+        scanf("%s", &name);
+        int c=strcmp(name,"birladen");//function imported from string.h 
+        if (c!=0){
+      printf("hi %s ,Enter  your age....",name);
+      scanf("%d", &age);
+      printf("Enter Your destination..... ");
+      scanf("%s", &dest);
+      printf("thanks for cooperation %s,/n happy journey  to %s",name,dest);
+      
+        }
+        else{
+      printf("you are not allowed and u are under  suspect..... ");
+        }
+      return 0; 
+      }
+              </code>
+                  </pre>
+            <p>
+              The above logics will execute branch code one time .there are 2
+              conditions which will execute the branch code multiple times
+            </p>
+            <p>
+              They are…<br />
+              While loop<br />
+              For loop
+            </p>
+            <p>
+              Both while loop and for loop looks similar… … But in for loop we
+              know how many reputation branch loop makes Before… .like x no. Of
+              times But while loops around till the value get false even
+              infinite time…
+            </p>
+          </div>
+          <div class="container-block">
+            <h1><strong>While</strong></h1>
+            <p>
+              While condition will loop the same condition multiple times by
+              checking the condition after every loop
+            </p>
+            <p><strong>While Example code</strong></p>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+        int main () {
+       /* local variable definition */
+       int a = 10;
+       /* while loop execution */
+       while( a &lt; 20 ) {
+          printf("value of a: %d\n", a);
+          a++;//this format means a=a+1
+        //ie. Its just increment….of data stored in a by 1
+       }
+       return 0;
+        }
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>For</strong></h1>
+              <p><strong>For.. Example Code</strong></p>
+              <pre>
+                <code class="c">
+              #include &lt;stdio.h&gt;
+                int main () {
+      
+                  int a;
+      
+                  /* for loop execution */
+                  for( a = 10; a &lt; 20; a = a + 1 ){
+                    printf("value of a: %d\n", a);
+                  }
+      
+                  return 0;
+                }
+                </code>
+                    </pre>
+              <p>
+                Let me ask u for writing down prime no. Up-to 10,000 Once try it
+                on paper and imagine how much time it takes for a human<br />
+                Now lets find Prime Numbers up-to 10,000 Using C
+              </p>
+              <p>It completes the job in seconds…</p>
+            </div>
+            <div>
+              <img src="images/loop.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <h1><strong>PRINTING PRIME NO. CODE</strong></h1>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+      int main(){
+      
+        int num,i,count,n;
+        printf("Enter max range: ");
+        scanf("%d",&n);
+      
+        for(num = 1;num&lt;=n;num++){
+         count = 0;
+         for(i=2;i&lt;=num/2;i++){
+             if(num%i==0){
+                 count++;
+                 break;
+             }
+        }
+      
+         if(count==0 && num!= 1)
+             printf("%d ",num);
+        }
+      
+       return 0;
+      }
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <div>
+              <h1><strong>Switch</strong></h1>
+              <p>
+                it is simiar to else if statement it executes multiple tasks for
+                multiple values of parameter variable
+              </p>
+              <pre>
+                <code class="c">
+              #include &lt;stdio.h&gt;
+              int main () {
+      
+                /* local variable definition */
+                char grade = 'B';
+      
+                switch(grade) {
+                   case 'A' :
+                      printf("Excellent!\n" );
+                      break;
+                   case 'B' :
+                   case 'C' :
+                      printf("Well done\n" );
+                      break;
+                   case 'D' :
+                      printf("You passed\n" );
+                      break;
+                   case 'F' :
+                      printf("Better try again\n" );
+                      break;
+                   default :
+                      printf("Invalid grade\n" );
+                }
+      
+                printf("Your grade is  %c\n", grade );
+      
+                return 0;
+              }
+      
+                </code>
+                    </pre>
+            </div>
+            <div>
+              <img src="images/switch.webp" alt="" />
+            </div>
+          </div>
+          <div class="content-block">
+            <h1><strong>Pointers</strong></h1>
+            <p>
+              Pointers are the variables which store The address of other
+              variables
+            </p>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+      int main(){  
+        int number=50;    
+        int *p;      
+        p= & number;//stores the address of number variable    
+        printf("Address of p variable is %x \n",p); // p contains the address of the number
+                                                // therefore printing p gives
+                                                //the address of number.     
+        printf("Value of p variable is %d \n",*p); // As we know that * is used to
+                                                //dereference a pointer therefore if we
+                                                //print *p, we will get the value stored at
+                                                //the address contained by p.    
+        return 0;  
+        }
+              </code>
+                  </pre>
+          </div>
+          <div class="content-block">
+            <h1><strong>Struct</strong></h1>
+            <p>
+              Structure in c is a user-defined data type that enables us to
+              store the collection of different data types
+            </p>
+            <pre>
+              <code class="c">
+      #include &lt;stdio.h&gt;
+      #include &lt;string.h&gt;
+      // create struct with person1 variable
+      struct Person {
+        char name[50];
+        int citNo;
+        float salary;
+      } person1;
+      
+      int main() {
+      
+        // assign value to name of person1
+        strcpy(person1.name, "George Orwell");
+      
+        // assign values to other person1 variables
+        person1.citNo = 1984;
+        person1. salary = 2500;
+      
+        // print struct variables
+        printf("Name: %s\n", person1.name);
+        printf("Citizenship No.: %d\n", person1.citNo);
+        printf("Salary: %.2f", person1.salary);
+      
+        return 0;
+      }
+              </code>
+                  </pre>
+          </div>
+          <div class="intermediate-block">
+            <div class="link-layout">
+              <a href="cdeep.html">C in deep..</a>
+            </div>
+          </div>
         </div>
-        <div class="content-block">
-          <h1><strong>Switch</strong></h1>
-          <p>
-            it is simiar to else if statement it executes multiple tasks for
-            multiple values of parameter variable
-          </p>
-          <pre>
-  <code class="c">
-#include &lt;stdio.h&gt;
-int main () {
-
-  /* local variable definition */
-  char grade = 'B';
-
-  switch(grade) {
-     case 'A' :
-        printf("Excellent!\n" );
-        break;
-     case 'B' :
-     case 'C' :
-        printf("Well done\n" );
-        break;
-     case 'D' :
-        printf("You passed\n" );
-        break;
-     case 'F' :
-        printf("Better try again\n" );
-        break;
-     default :
-        printf("Invalid grade\n" );
-  }
-  
-  printf("Your grade is  %c\n", grade );
-
-  return 0;
-}
-
-  </code>
-      </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Pointers</strong></h1>
-          <p>
-            Pointers are the variables which store The address of other
-            variables
-          </p>
-          <pre>
-            <code class="c">
-          #include &lt;stdio.h&gt;
-          int main(){  
-            int number=50;    
-            int *p;      
-            p= & number;//stores the address of number variable    
-            printf("Address of p variable is %x \n",p); // p contains the address of the number
-                                                        // therefore printing p gives 
-                                                        //the address of number.     
-            printf("Value of p variable is %d \n",*p); // As we know that * is used to 
-                                                        //dereference a pointer therefore if we 
-                                                        //print *p, we will get the value stored at 
-                                                        //the address contained by p.    
-            return 0;  
-            }    
-            
-            </code>
-                </pre>
-        </div>
-        <div class="content-block">
-          <h1><strong>Struct</strong></h1>
-          <p>
-            Structure in c is a user-defined data type that enables us to store
-            the collection of different data types
-          </p>
-          <pre>
-            <code class="c">
-#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-// create struct with person1 variable
-struct Person {
-  char name[50];
-  int citNo;
-  float salary;
-} person1;
-
-int main() {
-
-  // assign value to name of person1
-  strcpy(person1.name, "George Orwell");
-
-  // assign values to other person1 variables
-  person1.citNo = 1984;
-  person1. salary = 2500;
-
-  // print struct variables
-  printf("Name: %s\n", person1.name);
-  printf("Citizenship No.: %d\n", person1.citNo);
-  printf("Salary: %.2f", person1.salary);
-
-  return 0;
-}
-
-            </code>
-                </pre>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
     <script>
       hljs.highlightAll();

@@ -90,8 +90,44 @@ a {
   padding: 5rem;
 }
 
+.content-block img {
+  width: 600px;
+  height: 500px;
+}
+
+.content-block div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 730px) {
   .hljs {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .content-block img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-block img {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+.intermediate-block {
+  width: 100%;
+  background: linear-gradient(#8e2de2, #4a00e0);
+  height: 30rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.1);
 }
