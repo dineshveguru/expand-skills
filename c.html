@@ -52,15 +52,15 @@
             <p>the sample code of c language looks like this</p>
             <pre>
                 <code class="c">
-      #include  &lt;stdio.h&gt;
-      int  main()
-      {
-          int a =78;
-          int b=34;
-          int add=a+b;
-          printf("%d",c);
-          return add;
-      }
+#include  &lt;stdio.h&gt;
+int  main()
+{
+    int a =78;
+    int b=34;
+    int add=a+b;
+    printf("%d",c);
+    return add;
+}
                 </code>
             </pre>
             <p>
@@ -124,11 +124,11 @@
               </p>
               <pre>
                 <code class="c">
-              int Score = 777;
-              char Grade="A";
-              char Team[20]="Expand Skills" //[20] is the limit of chars
-              float numfloat= 4.21 // 7 decimal digit precision
-              double numdouble= 2.398347342 // 15 decimal digit precision
+int Score = 777;
+char Grade="A";
+char Team[20]="Expand Skills" //[20] is the limit of chars
+float numfloat= 4.21 // 7 decimal digit precision
+double numdouble= 2.398347342 // 15 decimal digit precision
                 </code>
                     </pre>
               <p>
@@ -159,11 +159,11 @@
               <p><strong>Array code</strong></p>
               <pre>
                 <code class="c">
-              int  mark[5]={19,10,8,17,9};
-              //declaring array with size 5
-      
-              mark[2]=1;
-              //replacing element in index[2] with element 1
+int  mark[5]={19,10,8,17,9};
+//declaring array with size 5
+
+mark[2]=1;
+//replacing element in index[2] with element 1
                 </code>
                     </pre>
             </div>
@@ -192,7 +192,7 @@
             <p>In c code statement below,</p>
             <pre>
               <code class="c">
-      printf("Hello, World!  \n");
+printf("Hello, World!  \n");
               </code>
                   </pre>
             <p>
@@ -216,11 +216,11 @@
             </p>
             <pre>
               <code class="c">
-      /*  multiple
-      line 
-      comment  */ 
-      
-      //  this  is  a  single line comment
+/*  multiple
+line 
+comment  */ 
+
+//  this  is  a  single line comment
               </code>
                   </pre>
           </div>
@@ -234,39 +234,39 @@
               </p>
               <pre>
                 <code class="c">
-      auto 
-      else
-      Long
-      switch 
-      break
-      enum
-      register
-      typedef
-      case
-      extern 
-      return
-      union
-      char 
-      float 
-      short 
-      unsigned 
-      const
-      for 
-      signed
-      void
-      continue
-      goto 
-      sizeof
-      volatile 
-      default
-      if 
-      static
-      while
-      do
-      int 
-      struct
-      _ packed 
-      double
+auto 
+else
+Long
+switch 
+break
+enum
+register
+typedef
+case
+extern 
+return
+union
+char 
+float 
+short 
+unsigned 
+const
+for 
+signed
+void
+continue
+goto 
+sizeof
+volatile 
+default
+if 
+static
+while
+do
+int 
+struct
+_ packed 
+double
                 </code>
                     </pre>
             </div>
@@ -285,10 +285,10 @@
               <p><strong>basic Function syntax:</strong></p>
               <pre>
                 <code class="c">
-              return_type  function_name( parameter list )
-              {
-                body of the function
-              }
+return_type  function_name( parameter list )
+{
+  body of the function
+}
                 </code>
                     </pre>
               <p>
@@ -304,16 +304,16 @@
               <p>The below function is add function...</p>
               <pre>
                 <code class="c">
-              /*  Addition Function for 2 Numbers*/
-              int  Add(int  num1,  int  num2)//num1, num2 are parameters
-              {
-              /*  local  variable  declaration  */
-                int  Ans;
-                Ans  =  num2  +num  1;
-                //storing  data  in  Ans
-                return  Ans;
-              //function  returns  Ans when  its  called
-              }
+/*  Addition Function for 2 Numbers*/
+int  Add(int  num1,  int  num2)//num1, num2 are parameters
+{
+/*  local  variable  declaration  */
+  int  Ans;
+  Ans  =  num2  +num  1;
+  //storing  data  in  Ans
+  return  Ans;
+//function  returns  Ans when  its  called
+}
                 </code>
                     </pre>
               <p>Function is called by the following syntax</p>
@@ -322,19 +322,19 @@
               <p>Now lets run sample code in c</p>
               <pre>
               <code class="c">
-              /*  this is  a comment  computer ignores  it it is used  to make program  notes*/
-              #include  &lt;stdio.h&gt;
-              /*imports   a c coded  file named  stdio.h we are importing it for  a reason*/
-              int  main()     /*   this is the main function where  main process is executed */
-              {
-                int a =36;
-                /*  is declaration  and assigning  variable with identifier  a, b*/
-                int b=34;
-                int add=a+b;
-                printf("%d",c); /*this is a function imported  from stdio.h and lt will display any text in console*/
-                  return add;
-              /*returns a value add if any other  code calls the main function */
-              }
+/*  this is  a comment  computer ignores  it it is used  to make program  notes*/
+#include  &lt;stdio.h&gt;
+/*imports   a c coded  file named  stdio.h we are importing it for  a reason*/
+int  main()     /*   this is the main function where  main process is executed */
+{
+  int a =36;
+  /*  is declaration  and assigning  variable with identifier  a, b*/
+  int b=34;
+  int add=a+b;
+  printf("%d",c); /*this is a function imported  from stdio.h and lt will display any text in console*/
+    return add;
+/*returns a value add if any other  code calls the main function */
+}
               </code>
                   </pre>
               <p>
@@ -346,7 +346,7 @@
               </p>
               <pre>
                 <code class="c">
-              70
+70
                 </code>
                     </pre>
             </div>
@@ -358,33 +358,32 @@
             <h1><strong>Understanding Printf Function</strong></h1>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-        int main()
-        {
-        char ch = 'A';
-        char str[30] = "Expand  Skills";
-        float flt = 10.234;
-        int no = 150;
-        double dbl =20. 123456 ;
-        printf("Character is %c \n", ch);
-        printf("String is %s \n" , str);
-        printf("Float value is %f \n", flt);
-        printf("Integer value is %d\n" , no);
-        printf("Double value is %lf \n", dbl);
-        return 0;
-        }
-      
+#include &lt;stdio.h&gt;
+  int main()
+  {
+  char ch = 'A';
+  char str[30] = "Expand  Skills";
+  float flt = 10.234;
+  int no = 150;
+  double dbl =20. 123456 ;
+  printf("Character is %c \n", ch);
+  printf("String is %s \n" , str);
+  printf("Float value is %f \n", flt);
+  printf("Integer value is %d\n" , no);
+  printf("Double value is %lf \n", dbl);
+  return 0;
+  }
               </code>
                   </pre>
             <p>print function is used to display something On console screen</p>
             <p>above code is going to give output............</p>
             <pre>
               <code class="c">
-      Character is A
-      String is Expand  Skills
-      Float value is 10.234000
-      Integer value is 150
-      Double value is 20.12345600000000
+Character is A
+String is Expand  Skills
+Float value is 10.234000
+Integer value is 150
+Double value is 20.12345600000000
               </code>
                   </pre>
           </div>
@@ -395,38 +394,36 @@
             <p>Consider the following code</p>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-        int main()
-        {
-        char ch;
-        char str[100];
-        int age;
-      
-        printf("Enter any character \n");
-        scanf("%c", &ch);
-        printf("Entered character is %c \n", ch);
-        printf("Enter any string ( upto 100 character ) \n");
-        scanf("%s", &str);
-        printf("Entered string is %s \n", str);
-      
-        printf("Enter any number \n");
-        scanf("%d", &age);
-        printf("Entered no. is %d \n", age);
-        }
+#include &lt;stdio.h&gt;
+  int main()
+  {
+    char ch;
+    char str[100];
+    int age;
+    printf("Enter any character \n");
+    scanf("%c", &ch);
+    printf("Entered character is %c \n", ch);
+    printf("Enter any string ( upto 100 character ) \n");
+    scanf("%s", &str);
+    printf("Entered string is %s \n", str);
+    printf("Enter any number \n");
+    scanf("%d", &age);
+    printf("Entered no. is %d \n", age);
+  }
               </code>
                   </pre>
             <p>this is going to give output......</p>
             <pre>
               <code class="c">
-      Enter any character
-      z
-      Entered character is z
-      Enter any string ( upto 100 character )
-      Expandskills
-      Entered string is Expandskills
-      Enter any number
-      7
-      Entered no. is 7
+Enter any character
+z
+Entered character is z
+Enter any string ( upto 100 character )
+Expandskills
+Entered string is Expandskills
+Enter any number
+7
+Entered no. is 7
               </code>
                   </pre>
           </div>
@@ -438,33 +435,32 @@
             </p>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-        int main()
-        {
-      printf("......TRAVELERS INFO.....\n ");
-      char name[20],dest[30];
-      int age;
-      printf("Enter Your Name....");
-      scanf("%s", &name);
-      printf("hi %s ,Enter  your age...."name);
-      scanf("%d", &age);
-      printf("Enter Your destination..... ");
-      scanf("%s", &dest);
-      
-      printf("thanks for cooperation %s,\n happy journey  to %s",name,dest);
-      return 0; 
-        }
+#include &lt;stdio.h&gt;
+  int main()
+  {
+    printf("......TRAVELERS INFO.....\n ");
+    char name[20],dest[30];
+    int age;
+    printf("Enter Your Name....");
+    scanf("%s", &name);
+    printf("hi %s ,Enter  your age...."name);
+    scanf("%d", &age);
+    printf("Enter Your destination..... ");
+    scanf("%s", &dest);
+    printf("thanks for cooperation %s,\n happy journey  to %s",name,dest);
+    return 0; 
+  }
               </code>
                   </pre>
             <p>this is going to give output.. ....</p>
             <pre>
                     <code class="c">
-      ......TRAVELERS INFO.....
-      Enter Your Name....Manoj
-      hi Manoj ,Enter  your age....19
-      Enter Your destination..... allagaddha
-      thanks for cooperation Manoj,
-      happy journey  to allagaddha
+......TRAVELERS INFO.....
+Enter Your Name....Manoj
+hi Manoj ,Enter  your age....19
+Enter Your destination..... allagaddha
+thanks for cooperation Manoj,
+happy journey  to allagaddha
                     </code>
                         </pre>
             <p>Its just dealing with info with computer</p>
@@ -501,19 +497,19 @@
               <p><strong>If example code</strong></p>
               <pre>
                 <code class="c">
-              #include &lt;stdio.h&gt;
-                int main ()
-                {
-                    int a;
-                    printf("enter  value of a.");
-                    scanf("%d",&a);
-                    /* check the boolean condition using if statement */
-                    if( a &lt; 20 ) {
-                      /* if condition is true then print the following */
-                      printf("if statement executed \n" );
-                  }
-                    return 0;
-                }
+#include &lt;stdio.h&gt;
+  int main ()
+  {
+      int a;
+      printf("enter  value of a.");
+      scanf("%d",&a);
+      /* check the boolean condition using if statement */
+      if( a &lt; 20 ) {
+        /* if condition is true then print the following */
+        printf("if statement executed \n" );
+      }
+      return 0;
+  }
                 </code>
                     </pre>
             </div>
@@ -532,23 +528,22 @@
               </p>
               <pre>
                 <code class="c">
-              #include &lt;stdio.h&gt;
-                int main ()
-                {
-                    int a;
-                    printf("enter  value of a.");
-                    scanf("%d",&a);
-                    /* check the boolean condition using if statement */
-                    if( a &lt; 20 ) {
-                      /* if condition is true then print the following */
-                      printf("if statement executed \n" );
-                  }
-                else{
-                      printf("else statement executed \n" );
-                  }
-      
-                    return 0;
-                }
+#include &lt;stdio.h&gt;
+int main ()
+{
+    int a;
+    printf("enter  value of a.");
+    scanf("%d",&a);
+    /* check the boolean condition using if statement */
+    if( a &lt; 20 ) {
+      /* if condition is true then print the following */
+      printf("if statement executed \n" );
+  }
+else{
+      printf("else statement executed \n" );
+  }
+    return 0;
+}
                 </code>
                     </pre>
             </div>
@@ -560,29 +555,29 @@
             <h1><strong>Pointing birladen out in names</strong></h1>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-      #include &lt;String.h&gt;                                               
-      int main()
-      {
-        printf("......TRAVELERS INFO.....\n ");
-        char name[20],dest[30];
-        int age; 
-        printf("Enter Your Name....");
-        scanf("%s", &name);
-        int c=strcmp(name,"birladen");//function imported from string.h 
-        if (c!=0){
-      printf("hi %s ,Enter  your age....",name);
-      scanf("%d", &age);
-      printf("Enter Your destination..... ");
-      scanf("%s", &dest);
-      printf("thanks for cooperation %s,/n happy journey  to %s",name,dest);
-      
-        }
-        else{
-      printf("you are not allowed and u are under  suspect..... ");
-        }
-      return 0; 
-      }
+#include &lt;stdio.h&gt;
+#include &lt;String.h&gt;                                               
+int main()
+{
+  printf("......TRAVELERS INFO.....\n ");
+  char name[20],dest[30];
+  int age; 
+  printf("Enter Your Name....");
+  scanf("%s", &name);
+  int c=strcmp(name,"birladen");//function imported from string.h 
+  if (c!=0){
+printf("hi %s ,Enter  your age....",name);
+scanf("%d", &age);
+printf("Enter Your destination..... ");
+scanf("%s", &dest);
+printf("thanks for cooperation %s,/n happy journey  to %s",name,dest);
+
+  }
+  else{
+printf("you are not allowed and u are under  suspect..... ");
+  }
+return 0; 
+}
               </code>
                   </pre>
             <p>
@@ -610,18 +605,18 @@
             <p><strong>While Example code</strong></p>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-        int main () {
-       /* local variable definition */
-       int a = 10;
-       /* while loop execution */
-       while( a &lt; 20 ) {
-          printf("value of a: %d\n", a);
-          a++;//this format means a=a+1
-        //ie. Its just increment….of data stored in a by 1
-       }
-       return 0;
-        }
+#include &lt;stdio.h&gt;
+  int main () {
+  /* local variable definition */
+  int a = 10;
+  /* while loop execution */
+  while( a &lt; 20 ) {
+    printf("value of a: %d\n", a);
+    a++;//this format means a=a+1
+  //ie. Its just increment….of data stored in a by 1
+  }
+  return 0;
+  }
               </code>
                   </pre>
           </div>
@@ -631,18 +626,18 @@
               <p><strong>For.. Example Code</strong></p>
               <pre>
                 <code class="c">
-              #include &lt;stdio.h&gt;
-                int main () {
-      
-                  int a;
-      
-                  /* for loop execution */
-                  for( a = 10; a &lt; 20; a = a + 1 ){
-                    printf("value of a: %d\n", a);
-                  }
-      
-                  return 0;
-                }
+#include &lt;stdio.h&gt;
+  int main () {
+
+    int a;
+
+    /* for loop execution */
+    for( a = 10; a &lt; 20; a = a + 1 ){
+      printf("value of a: %d\n", a);
+    }
+
+    return 0;
+  }
                 </code>
                     </pre>
               <p>
