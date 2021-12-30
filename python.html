@@ -356,9 +356,126 @@ if(a=="expandskills"):
             </code>
         </pre>
         </div>
-        <div class="content-block"></div>
-        <div class="content-block"></div>
-        <div class="content-block"></div>
+        <div class="content-block">
+          <div>
+            <h1><strong>If else</strong></h1>
+            <p>
+              If else conditon controls conditional branching ie. it checks the
+              conditional parameter ,and allows the branch to execute 2 ways one
+              way if conditional parameter equalls to True ,another way if
+              conditional parameter equalls to False
+            </p>
+          </div>
+          <div><img src="images/else.webp" alt="" /></div>
+          <p><strong>If ELSE ...example code</strong></p>
+          <pre>
+            <code class="python">
+a=input("Enter the name of site\n")
+if(a=="expandskills"):
+    print("U got it right")
+else:
+    print("U are wrong....its expandskills")   
+            </code>
+        </pre>
+        </div>
+        <div class="content-block">
+          <h1><strong>Pointing birladen out in names</strong></h1>
+          <pre>
+                <code class="python">
+print(".....TRAVELLERS   INFO.....")
+Name=input("Enter Your Name \n")
+if(Name!="birladen"):
+    Age=input("Enter Your Age\n")
+    Dest=input("Enter Your Destination\n")
+    print("Thanks For Cooperation  "+Name+"  HAPPY JOURNEY to  "+Dest)
+else:
+    print("...Stop There you are under Suspect.....")                      
+                </code>
+            </pre>
+          <p>
+            The above logics will execute branch code one time .there are 2
+            conditions which will execute the branch code multiple times
+          </p>
+          <p>They are… .</p>
+          <ul>
+            <li>While loop</li>
+            <li>For loop</li>
+          </ul>
+          <p>
+            Both while loop and for loop looks similar… … But in for loop we
+            know how many reputation branch loop makes Before… .like x no. Of
+            times But while loops arounds till the value get false even infinite
+            time…we can't predict it for sure…
+          </p>
+        </div>
+        <div class="content-block">
+          <div>
+            <h1><strong>While </strong></h1>
+            <p>
+              While condition will loop the same conditional branch multiple
+              times by checking the condition after every loop
+            </p>
+          </div>
+          <div>
+            <img src="images/loop.webp" alt="" />
+          </div>
+        </div>
+        <div class="content-block">
+          <h1><strong>Printing n Numbers using while </strong></h1>
+          <pre>
+                <code class="python">
+a=input("Enter the Limit No.\n")
+i=0
+while(i &lt; int(a)):
+    print(i)
+    i += 1                                      
+                </code>
+            </pre>
+        </div>
+        <div class="content-block">
+          <div>
+            <h1><strong>For</strong></h1>
+          </div>
+          <div>
+            <img src="images/loop.webp" alt="" />
+          </div>
+          <p><strong>For example code</strong></p>
+          <pre>
+            <code class="python">
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)                                                    
+            </code>
+        </pre>
+          <p>
+            Let me ask u for writing down prime no. Up-to 10,000 Once try it on
+            paper and imagine how much time it takes for a human
+          </p>
+          <p>
+            Now lets find Prime Numbers up-to 10,000 Using C It completes the
+            job in seconds……
+          </p>
+        </div>
+        <div class="content-block">
+          <h1><strong>PRINTING PRIME NO. CODE</strong></h1>
+          <pre>
+            <code class="python">
+n=input("Enter the Limit for Prime Numbers… \n")
+for i in range(int(n)):
+    if i > 1:
+        for j in range(2, i):
+            if(i % j == 0):
+                break
+        else:
+            print(i)                                                                   
+            </code>
+        </pre>
+        </div>
+        <div class="intermediate-block">
+          <div class="link-layout">
+            <a href="pdeep.html">python in deep..</a>
+          </div>
+        </div>
       </div>
     </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
