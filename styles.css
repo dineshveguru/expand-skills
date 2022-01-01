@@ -43,7 +43,7 @@ html {
 .intro-heading {
   display: flex;
   justify-content: space-around;
-  background: url(images/Gradient-Background-Wallpaper-064.jpg);
+  background: url(images/Gradient-Background-Wallpaper-064.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
