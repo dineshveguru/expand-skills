@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.home-intro {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  width: 100%;
+}
+
+.intro-heading img {
+  width: 200px;
+  height: 100px;
+}
+
+.intro-heading h1 {
+  color: #fff;
+  font-size: 5rem;
+  text-align: end;
+}
+
+.intro-heading p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.intro-heading {
+  display: flex;
+  justify-content: space-around;
+  background: url(images/Gradient-Background-Wallpaper-064.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.intro-courses {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.intro-courses h1 {
+  color: #000;
+}
+
+.intro-courses div {
+  border-radius: 2rem;
+}
+
+.python img {
+  width: 200px;
+  height: 200px;
+}
+
+.java img {
+  width: 200px;
+  height: 200px;
+}
+
+.c img {
+  width: 200px;
+  height: 200px;
+}
+
+.courses-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: 0.2s;
+}
+
+.courses-block h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.courses-block {
+  background: linear-gradient(#0f2027, #203a43, #2c5364);
+}
+
+.courses-block:hover {
+  transform: scale(103%);
+}
+
+@media screen and (max-width: 1200px) {
+  .intro-courses {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-heading {
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+    .python img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .java img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .c img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .intro-heading h1 {
+      font-size: 3rem;
+    }
+  } */
