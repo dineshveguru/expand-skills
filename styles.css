@@ -9,18 +9,13 @@ html {
 
 body {
   width: 100%;
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
-  background-repeat: no-repeat;
-  color: #fff;
   height: max-content;
   min-height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .intro h1 {
@@ -29,6 +24,7 @@ a {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
+  color: rgb(36, 36, 36);
 }
 
 hr {
@@ -69,11 +65,36 @@ hr {
   align-items: center;
 }
 
-.courses-container-block a:hover {
-  padding: 1.5rem;
-  border-right: 1rem solid #fff;
-  border-left: 1rem solid #fff;
-  transition: ease 0.3s;
+.courses-container-layout a::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 40px;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  transition: width 0.3s, height 0.3s;
+  border-radius: 50%;
+}
+
+.courses-container-layout a {
+  position: relative;
+  overflow: hidden;
+}
+
+.courses-container-layout a:hover::before {
+  width: 60rem;
+  height: 60rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.courses-container-layout a:hover h1 {
+  color: #fff;
+  transition: color 0.3s;
 }
 
 @media screen and (max-width: 1230px) {
