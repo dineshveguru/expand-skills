@@ -85,6 +85,10 @@ int  main()
           </div>
           <div class="content-block">
             <div>
+              <img src="images/dtypes.webp" alt="" />
+            </div>
+            <div>
+              <h1><strong>Data Types</strong></h1>
               <p>
                 lets look into first one ie. Storing data in a classified way.
               </p>
@@ -150,9 +154,6 @@ double numdouble= 2.398347342 // 15 decimal digit precision
                 respectively When we want to acsess the data we are going to use
                 id tag(IDENTIFIER) to access it.
               </p>
-            </div>
-            <div>
-              <img src="images/dtypes.webp" alt="" />
             </div>
           </div>
           <div class="content-block">
@@ -674,28 +675,28 @@ return 0;
             <h1><strong>PRINTING PRIME NO. CODE</strong></h1>
             <pre>
               <code class="c">
-      #include &lt;stdio.h&gt;
-      int main(){
-      
-        int num,i,count,n;
-        printf("Enter max range: ");
-        scanf("%d",&n);
-      
-        for(num = 1;num&lt;=n;num++){
-         count = 0;
-         for(i=2;i&lt;=num/2;i++){
-             if(num%i==0){
-                 count++;
-                 break;
-             }
+#include &lt;stdio.h&gt;
+int main(){
+
+  int num,i,count,n;
+  printf("Enter max range: ");
+  scanf("%d",&n);
+
+  for(num = 1;num&lt;=n;num++){
+    count = 0;
+    for(i=2;i&lt;=num/2;i++){
+        if(num%i==0){
+            count++;
+            break;
         }
-      
-         if(count==0 && num!= 1)
-             printf("%d ",num);
-        }
-      
-       return 0;
-      }
+  }
+
+    if(count==0 && num!= 1)
+        printf("%d ",num);
+  }
+
+  return 0;
+}
               </code>
                   </pre>
           </div>
