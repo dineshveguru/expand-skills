@@ -278,9 +278,157 @@ printf("Hello, World!  \n");
             a string literal.
           </p>
         </div>
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
+        <div class="content">
+          <h1><strong>Comments</strong></h1>
+          <p class="extra-space">
+            Comments are text in your C program and they are ignored by the
+            compiler. They start with /* and terminates with the characters */
+            or u can make single line comment starting with // as shown below:
+          </p>
+          <pre class="extra-space">
+            <code class="c">
+/*  multiple
+line 
+comment  */ 
+//  this  is  a  single line comment</code>
+                </pre>
+        </div>
+        <div class="content">
+          <div>
+            <h1><strong>Keywords</strong></h1>
+            <div class="img-block">
+              <img src="images/keyword.webp" alt="" />
+            </div>
+            <p class="extra-space">
+              keywords are words with special meaning in c code,and cant be used
+              as variables or identifiers The following list shows the reserved
+              words in C
+            </p>
+            <pre class="extra-space">
+              <code class="c">
+auto 
+else
+Long
+switch 
+break
+enum
+register
+typedef
+case
+extern 
+return
+union
+char 
+float 
+short 
+unsigned 
+const
+for 
+signed
+void
+continue
+goto 
+sizeof
+volatile 
+default
+if 
+static
+while
+do
+int 
+struct
+_ packed 
+double
+              </code>
+                  </pre>
+          </div>
+        </div>
+        <div class="content">
+          <div>
+            <h1><strong>Functions</strong></h1>
+            <div class="img-block">
+              <img src="images/function.webp" alt="" />
+            </div>
+            <p>
+              Functions are a group of lines which will process code and every c
+              program musst have atleast one function cause its where the
+              execution of any task is done
+            </p>
+            <p class="extra-space"><strong>Basic Function syntax:</strong></p>
+            <pre class="extra-space">
+              <code class="c">
+return_type  function_name( parameter list )
+{
+body of the function
+}
+              </code>
+                  </pre>
+            <p class="extra-space">
+              returntype is the type which will be of type
+              <strong><i>void</i></strong> or <strong><i>int</i></strong>
+            </p>
+            <p>
+              function_name is the <strong><i>identifier</i></strong>
+            </p>
+            <p class="extra-space">
+              parameter list takes input if the function takes input to e body
+              of the function contains code which is to be executed if we call
+              function
+            </p>
+            <p class="extra-space">
+              <i>The below function is add function...</i>
+            </p>
+            <pre class="extra-space">
+              <code class="c">
+/*  Addition Function for 2 Numbers*/
+int  Add(int  num1,  int  num2)//num1, num2 are parameters
+{
+/*  local  variable  declaration  */
+int  Ans;
+Ans  =  num2  +num  1;
+//storing  data  in  Ans
+return  Ans;
+//function  returns  Ans when  its  called
+}
+              </code>
+                  </pre>
+            <p class="extra-space">
+              Function is called by the following syntax
+            </p>
+            <p>Add(5, 7)</p>
+            <p class="extra-space">
+              it's going to execute and return Ans in place of Add(5,7)
+            </p>
+            <p class="extra-space">Now lets run sample code in c</p>
+            <pre class="extra-space">
+            <code class="c">
+/*  this is  a comment  computer ignores  it it is used  to make program  notes*/
+#include  &lt;stdio.h&gt;
+/*imports   a c coded  file named  stdio.h we are importing it for  a reason*/
+int  main()     /*   this is the main function where  main process is executed */
+{
+int a =36;
+/*  is declaration  and assigning  variable with identifier  a, b*/
+int b=34;
+int add=a+b;
+printf("%d",c); /*this is a function imported  from stdio.h and lt will display any text in console*/
+  return add;
+/*returns a value add if any other  code calls the main function */
+}
+            </code>
+                </pre>
+            <p class="extra-space">
+              When we Run the code the computer will read line to line and
+              performs the task assined.
+            </p>
+            <p>we assigned to add two numbers and print .it will give output</p>
+            <pre class="extra-space">
+              <code class="c">
+70
+              </code>
+                  </pre>
+          </div>
+        </div>
         <div class="content"></div>
         <div class="content"></div>
         <div class="content"></div>
