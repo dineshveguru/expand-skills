@@ -24,6 +24,7 @@ a {
   flex-direction: column;
   height: 25vh;
   background: linear-gradient(to right, #f46b45, #eea849);
+  margin-top: 3rem;
 }
 
 .home-heading h1 {
@@ -68,7 +69,6 @@ a {
 
 .content p {
   font-size: 1.5rem;
-  font-weight: 450;
 }
 
 .content h1 {
@@ -82,7 +82,7 @@ a {
 
 .navbar-brand {
   font-size: 2rem !important;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .nav-link {
@@ -95,10 +95,6 @@ a {
 
 .navbar-toggler-icon {
   font-size: 2rem !important;
-}
-
-.navbar {
-  background: linear-gradient(to right, #f46b45, #eea849);
 }
 
 .content img {
@@ -137,4 +133,10 @@ a {
 
 .c {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .content-block {
+    max-width: 90vw;
+  }
 }
