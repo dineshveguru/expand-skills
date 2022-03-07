@@ -76,6 +76,11 @@ a {
   margin-bottom: 1rem;
 }
 
+.content h2 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-bottom: 1rem;
+}
+
 .extra-space {
   margin-top: 2=1rem;
 }
@@ -139,4 +144,17 @@ a {
   .content-block {
     max-width: 90vw;
   }
+}
+
+pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: rgb(34, 34, 34);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 2px solid rgb(138, 138, 138);
+}
+
+code {
+  color: #ccc !important;
 }

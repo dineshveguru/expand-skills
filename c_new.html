@@ -38,7 +38,7 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Content</h5>
             <button
               type="button"
               class="btn-close text-reset"
@@ -82,6 +82,8 @@
                 <a class="nav-link" href="#21">Switch</a>
                 <a class="nav-link" href="#22">Pointers</a>
                 <a class="nav-link" href="#23">Struct</a>
+                <a class="nav-link" href="#24">Array</a>
+                <a class="nav-link" href="#25">Else-if</a>
               </li>
             </ul>
           </div>
@@ -842,29 +844,172 @@ return 0;
             <code class="c">
 #include &lt;stdio.h&gt;
 #include &lt;string.h&gt;
-// create struct with person1 variable
-struct Person {
-char name[50];
-int citNo;
-float salary;
-} person1;
-
-int main() {
-
-// assign value to name of person1
-strcpy(person1.name, "George Orwell");
-
-// assign values to other person1 variables
-person1.citNo = 1984;
-person1. salary = 2500;
-
-// print struct variables
-printf("Name: %s\n", person1.name);
-printf("Citizenship No.: %d\n", person1.citNo);
-printf("Salary: %.2f", person1.salary);
-
-return 0;
+        // create struct with person1 variable
+        struct Person {
+          char name[50];
+          int age;
+          float worth;
+        } person1;
+        
+        int main() {
+        
+          // assign value to name of person1
+          strcpy(person1.name, "Ram");
+        
+          // assign values to other person1 variables
+          person1.age = 27;
+          person1.worth = 17;
+        
+          // print struct variables
+          printf("Name: %s\n", person1.name);
+          printf("age.: %d\n", person1.age);
+          printf("worth:
 }</code>
+                </pre>
+        </div>
+        <div class="content" id="24">
+          <h1><strong>Array</strong></h1>
+          <h2><strong>One-dimensional Array</strong></h2>
+          <p>It's simple collection of data types...</p>
+          <h2><strong>Two-dimensional Array</strong></h2>
+          <p>It's collection of 1d array ...</p>
+          <h2><strong>Three-dimensional Array</strong></h2>
+          <p>It's collection of 2d array ...</p>
+          <p>main purpose of array is TO STORE DATA IN A ORGANIZED FORMAT</p>
+          <p>
+            EX.. Look at pic below.... It's 2 d array......of pixels........
+            Where, each pixel is 1d array of int datatypes.... So it's all 3d
+            int datatypes And the array is below....
+          </p>
+          <pre class="extra-space">
+              <code class="c">
+[[[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[205,  23,  23],
+[204,  23,  23],
+[205,  23,  23],
+[205,  23,  23],
+[207, 196, 205],
+[206, 200, 205],
+[206, 200, 205],
+[206, 200, 205],
+[206, 200, 205]],
+
+[[204,  22,  22],
+[ 22,   0,   1],
+[  0,   0,   0],
+[  0,   0,   0],
+[206, 200, 205],
+[  2,   1,   2],
+[  0,   0,   0],
+[  0,   0,   0],
+[150, 145, 149]],
+
+[[204,  24,  23],
+[205,  23,  23],
+[205,  23,  23],
+[204,  22,  22],
+[206, 200, 205],
+[206, 200, 205],
+[206, 200, 205],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[205,  23,  23],
+[194,  23,  27],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[206, 200, 205],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[205,  23,  23],
+[204,  22,  22],
+[205,  23,  23],
+[202,  21,  27],
+[206, 200, 205],
+[205, 200, 204],
+[206, 200, 205],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[205,  23,  23],
+[204,  22,  22],
+[204,  22,  22],
+[204, 201, 203],
+[206, 200, 205],
+[206, 200, 205],
+[ 72,  66,  71],
+[  0,   0,   0],
+[  0,   0,   0]],
+
+[[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0],
+[  0,   0,   0]]]</code>
+                  </pre>
+          <h2><strong>3d array</strong></h2>
+          <p>
+            above Pic is expressed In basic datatypes... Similarly...... audio,
+            video and other formats....can be expressed as basic datatypes using
+            multi dimensional arrays
+          </p>
+        </div>
+        <div class="content" id="25">
+          <h1><strong>Else-if statement</strong></h1>
+          <p>
+            else if statement is similar to if statement which is executed when
+            the if statement before it is false.....
+          </p>
+          <pre class="extra-space">
+            <code class="c">
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main ()
+{
+    int a;
+    printf("enter  value of a.");
+    scanf("%d",&a);
+    /* check the boolean condition using if statement */
+    if( a &lt; 20 ) {
+      /* if condition is true then print the following */
+      printf("if statement executed \n" );
+  }
+else if (a&lt;30){
+      printf("else if statement executed \n" );
+  }
+  else {
+      printf("else  statement executed \n" );
+  }
+
+    return 0;
+}        
+</code>
                 </pre>
         </div>
       </div>

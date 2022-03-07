@@ -155,3 +155,11 @@ li,
 ol {
   margin-left: 4rem;
 }
+
+.c p {
+  color: #fff !important;
+}
+
+code {
+  color: #fff !important;
+}
