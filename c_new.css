@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 a {
@@ -207,13 +207,14 @@ code {
   }
 
   .img-extra--width {
-    width: 40rem !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .img-extra--width {
     width: 30rem !important;
     height: 20rem !important;
   }
 }
+
+/* @media screen and (max-width: 400px) {
+  .img-extra--width {
+    width: 30rem !important;
+    height: 20rem !important;
+  }
+} */
