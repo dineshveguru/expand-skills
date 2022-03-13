@@ -210,3 +210,10 @@ code {
     width: 40rem !important;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .img-extra--width {
+    width: 30rem !important;
+    height: 20rem !important;
+  }
+}
